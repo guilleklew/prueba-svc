@@ -1,0 +1,15 @@
+[Unit]
+Description=Servicio Systemd de prueba
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/prueba-svc.sh
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=root
+Group=root
+SyslogIdentifier=prueba-svc
+
+[Install]
+WantedBy=multi-user.target
