@@ -4,6 +4,7 @@ sleep 2
 sudo chmod +x ./prueba-svc.sh
 if [ ! -f /usr/bin/prueba-svc.sh ]; then
     sudo cp ./prueba-svc.sh /usr/bin/
+fi
 
 sudo cp ./prueba-svc.service /etc/systemd/system/
 
